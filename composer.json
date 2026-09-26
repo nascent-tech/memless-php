@@ -1,0 +1,28 @@
+{
+    "name": "nascent-tech/memless",
+    "description": "PHP FFI bridge to the memless C ABI",
+    "keywords": ["sql", "yaml", "ffi", "in-memory"],
+    "homepage": "https://github.com/nascent-tech/memless",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-ffi": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6 || ^10.5 || ^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Memless\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Memless\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
